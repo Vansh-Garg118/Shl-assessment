@@ -149,7 +149,7 @@ const App = () => {
                             "Biodata & Situational Judgement": "bg-pink-100 text-pink-800",
                             "Ability & Aptitude": "bg-orange-100 text-orange-800",
                             "Assessment Exercises": "bg-teal-100 text-teal-800",
-                            "Abstract Reasoning": "bg-red-100 text-red-800",
+                            "Simulations": "bg-red-100 text-red-800",
                           };
 
                           const colorClass = colorMap[type];

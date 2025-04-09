@@ -14,9 +14,11 @@ const SearchBar = ({ onSearchStart, onSearchComplete }) => {
     setError(null);
     setLoading(true);
     if (onSearchStart) onSearchStart();
-
+    // ${import.meta.env.BACKEND_URI}
     try {
-      const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/recommend`, {
+      const uri=`${import.meta.env.VITE_BACKEND_URI}/recommend`;
+      console.log(uri)
+      const res = await fetch(`${import.meta.env.VITE_BACKEND_URI}/recommend`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
