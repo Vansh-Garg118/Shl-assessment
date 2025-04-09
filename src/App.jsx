@@ -132,7 +132,7 @@ const App = () => {
                     {item.adaptive_support === "Yes" ? "✅" : "❌"}
                   </td>
                   <td className="px-4 py-3 border border-gray-300 text-center">
-                    {item.remote_support === "No" ? "✅" : "❌"}
+                    {item.remote_support === "Yes" ? "✅" : "❌"}
                   </td>
                   <td className="px-4 py-3 border border-gray-300 text-gray-700">
                     {item.duration || "Not Available"}
