@@ -16,7 +16,7 @@ const SearchBar = ({ onSearchStart, onSearchComplete }) => {
     if (onSearchStart) onSearchStart();
 
     try {
-      const res = await fetch("/api/recommend", {
+      const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/recommend`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
